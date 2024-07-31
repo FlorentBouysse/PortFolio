@@ -1,0 +1,9 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+download_cv:
+    path: /download-cv
+    controller:
+        App\Controller\MainController::downloadCv

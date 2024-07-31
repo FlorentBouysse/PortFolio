@@ -1,0 +1,37 @@
+{% extends 'front/base.html.twig' %}
+
+{% block body %}
+
+<div id="home" class="lg:h-screen relative top-10">
+    <span class="z-10 md:text-xl lg:text-xs text-green-400">Hello everyone 👋</span>
+    <h1 class="z-10 md:text-6xl lg:text-5xl mt-24 left-96 pl-28 ml-96"><span class="text-green-300">J</span>e suis Florent</h1>
+    <p class="z-10 mt-9 pl-28 md:ml-96 md:text-3xl lg:text-xl lg:w-2/4">Développeur web Fullstack avec une spécialisation <span class="text-green-300">Symfony</span> basé dans le nord de la <span class="text-green-300">Seine et Marne</span>.</p>
+
+    <div class="z-10 md:text-3xl lg:text-xl lg:text-xl mt-24 md:pl-80 lg:pl-60 md:ml-60 lg:ml-96 text-green-400">
+        <a href="{{ path('app_front_main_download') }}">📝 Télécharger mon CV</a>
+    </div>
+
+    {% if agent.isMobile() %}
+    <div style="left:-150px;width:600px;height:600px" class=" rounded-full opacity-20 bg-gray-500 absolute top-20"></div>
+    <div style="right:-100px" class="text-9xl opacity-5 absolute uppercase font-black text-white top-0 right-10">Hello</div>
+    
+    {% else %}
+    
+    <div style="left:-160px;width:700px;height:700px" class=" rounded-full opacity-20 bg-gray-500 absolute top-20"></div>
+    <div class="text-9xl opacity-5 absolute top-10 uppercase font-black text-white right-96">Hello</div>
+    {% endif %}
+    {# <div style="box-shadow: 0px -5px 10px rgb(17 24 39);" class="z-10 absolute bg-gray-900 w-screen h-32 bottom-20 right-0 md:h-40 md:w-2/5 md:bottom-0 md:right-24"></div> #}
+    <img style="left:-150px" class="rounded-full z-0 absolute top-48 md:top-24" src="{{ asset('img/profilsite.webp') }}" alt="Photo de profil">
+    
+</div>
+{% if agent.isMobile() %}
+    <div class="h-40"></div>
+{% endif %}
+
+{% include 'front/page/about.html.twig' %}
+{# {% include 'front/page/speciality.html.twig' %} #}
+{% include 'front/page/skill.html.twig' %}
+{% include 'front/page/project.html.twig' %}
+{% include 'front/page/contact.html.twig' %}
+
+{% endblock %}

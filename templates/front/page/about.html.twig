@@ -1,0 +1,26 @@
+{% if agent.isMobile() %}
+<div id="about" class="z-10 mt-96">
+{% else %}
+<div id="about" style="margin-top:-300px; margin-bottom:200px" class="z-20">
+{% endif %}
+    <span class="md:text-xl lg:text-xs text-green-400">About me</span>
+    <h2 class="md:text-4xl lg:text-3xl mt-6">En quelques mots</h2>
+    
+    <p class="mt-8 pe-8 md:mr-64 lg:mr-96 md:pr-0 lg:pr-52 md:text-3xl lg:text-xl">Je viens du commerce et je voulais faire autre chose, quelque chose qui soit plus satisfaisant, après tout <span class="text-green-300">on a qu'une vie</span> non !</p>
+    
+    <p class="mt-8 pe-8 md:ml-8 lg:ml-0 md:mr-44 lg:mr-96 md:pr-0 lg:pr-52 md:text-3xl lg:text-xl">J'avais déjà découvert la programmation via le langage Python et je me suis dis que c'était l'occasion pour moi, le train ne passe parfois qu'une seule et unique fois.</p>
+    
+    <p class="mt-8 pe-8 md:ml-16 lg:ml-0 md:mr-34 lg:mr-96 md:pr-0 lg:pr-52 md:text-3xl lg:text-xl">J'ai donc quitté mon emploi à l'aéroport pour me consacrer à la formation Développeur Web et Web Mobile <span class="text-green-300">spécialisation Symfony</span> que proposait O'clock, que j'ai terminé, j'ai ensuite obtenu mon <span class="text-green-300">Titre Professionnel</span> et enfin me voilà, près à vous aidez et vous <span class="text-green-300">accompagnez dans vos projets</span> !</p>
+    
+    
+
+    {# Absolute div #}
+    <div style="width:220px;height:200px; top:1000px;left:-50px" class="rounded-full opacity-20 bg-gray-500 absolute"></div>
+    
+    {% if agent.isMobile() %}
+    {# <div style="box-shadow: 0px -5px 10px rgb(17 24 39);top:1120px;" class="absolute bg-gray-900 w-screen h-20 bottom-10 left-0"></div> #}
+    <div style="left:-10px; top: 900px" class="text-8xl opacity-5 absolute uppercase font-black text-white">About me</div>
+    {% else %}
+    <div style="left:-10px; top: 700px" class="text-8xl opacity-5 absolute uppercase font-black text-white">About me</div>
+    {% endif %}
+</div>

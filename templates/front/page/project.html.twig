@@ -1,0 +1,31 @@
+<div class="mt-48 mb-48 relative ">
+    <span class="z-10 md:text-xl lg:text-xs text-green-400">Project Work</span>
+    <h2 class="z-10 md:text-4xl lg:text-3xl mt-6 pe-8">Les projets</h2>
+    <p class="z-10 mt-6 pe-8 md:text-3xl lg:text-xl md:mr-96">Projets sur lesquels j'ai travaillé et travail encore.</p>
+    
+    {# icon more #}
+    {# <button class="z-10 absolute right-8 md:right-48 md:mt-10">
+        <i class=" rotate-45 fa-solid fa-circle-arrow-up"></i>
+        <p class="md:text-xl lg:text-xs text-green-400">More project</p>
+    </button> #}
+
+    <div class="grid md:grid-cols-1 lg:grid-cols-2 flex mt-40 md:text-3xl lg:text-xl">
+        <div class="z-10 py-5 flex flex-col items-center rounded-xl opacity-75 px-6">
+            <img class="w-3/4 h-3/4" src="{{ asset('img/project_baoxer.webp') }}" alt="image projet">
+            <h3 class="my-4 text-green-400"><a href="https://github.com/FlorentBouysse/Baoxer">Baoxer (github)</a></h3>
+            <p>Projet de fin d'étude réalisé avec une équipe de 5 personnes</p>
+            <p>Techno utilisé : Symfony / React JS</p>
+        </div>
+        <div class="z-10 py-5 flex flex-col items-center rounded-xl opacity-75 px-6">
+            <img class="w-3/4 h-3/4" src="{{ asset('img/picture__project.webp') }}" alt="image projet">
+            <h3 class="my-4 text-green-400"><a href="#">Cook project</a></h3>
+            <p>Projet en cours de développement</p>
+            <p>Techno utilisé : Symfony / React JS</p>
+        </div>
+    </div>
+
+    {# Absolute div #}
+    <div style="width:250px;height:250px; top:150px;right:-50px" class="rounded-full opacity-20 bg-gray-500 absolute"></div>
+    <div style="width:50px;height:50px; top:100px;left:20px" class="rounded-full opacity-20 bg-gray-500 absolute"></div>
+    <div style="left:-50px; top: -50px" class="text-7xl opacity-5 absolute uppercase font-black text-white z-20">Project Work</div>
+</div>
